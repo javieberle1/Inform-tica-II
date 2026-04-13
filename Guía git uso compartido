@@ -1,0 +1,62 @@
+Esta es la guía rápida con los comandos listos para copiar y usar en su proyecto. Pueden guardarla en un archivo de texto o en una nota para tenerla siempre a mano.
+
+---
+
+# 🚀 Guía Rápida de Git para el Equipo
+
+### 1. Configuración Inicial (Solo para el que NO creó el repo)
+Si todavía no tenés el código en tu carpeta local, ejecutá esto una sola vez:
+```bash
+git clone https://github.com/javieberle1/Inform-tica-II.git
+```
+
+---
+
+### 2. El Ciclo Diario (Hacer esto CADA VEZ que programen)
+
+**PASO 1: Bajar lo que hizo tu compañero (Antes de empezar)**
+```bash
+git pull origin main
+```
+
+**PASO 2: Programar**
+(Acá es cuando abren el editor, modifican los archivos `.c` o agregan nuevas funciones).
+
+**PASO 3: Preparar y etiquetar tus avances (Al terminar)**
+```bash
+git add .
+git commit -m "Explicación breve de lo que hiciste"
+```
+
+**PASO 4: Subir a GitHub (Para que el otro lo pueda ver)**
+```bash
+git push origin main
+```
+
+---
+
+### 3. Comandos de Auxilio (Por si algo falla)
+
+**¿En qué estado está mi carpeta?** (Ver qué archivos cambiaste)
+```bash
+git status
+```
+
+**¿Qué fue lo último que se subió?** (Ver historial)
+```bash
+git log --oneline
+```
+
+**¿Qué cambié exactamente en el código?** (Antes de hacer el add)
+```bash
+git diff
+```
+
+---
+
+### 💡 Reglas de convivencia para no romper nada:
+1. **PULL antes de empezar:** Nunca empiecen a escribir código sin antes haber hecho un `git pull`.
+2. **Mensajes claros:** En el `commit -m "..."`, pongan algo que se entienda, por ejemplo: `"Corregí el error en el puntero"` o `"Agregué el menú principal"`.
+3. **Avisar por WhatsApp:** Cuando uno haga un `push`, tire un mensaje al otro: *"Ya subí los cambios de hoy"*.
+
+Esta estructura les va a servir para mantener el repositorio de **Informática II** organizado mientras avanzan con el código. ¿Quieren que agregue alguna sección específica sobre cómo manejar archivos de configuración o carpetas compartidas?
